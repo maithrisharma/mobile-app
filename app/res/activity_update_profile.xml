@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for Update Profile Activity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cut_card_background"
+    tools:context=".UpdateProfile">
+
+    <!-- Space with height 50sp -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"/>
+
+    <!-- Icon for Profile -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120sp"
+        android:layout_height="100sp"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        android:layout_marginLeft="130sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"/>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for Full Name Label -->
+        <TextView
+            android:id="@+id/fullNameUpdateLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Full Name" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for Full Name with id: fullNameUpdate -->
+        <EditText
+            android:id="@+id/fullNameUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPersonName"
+            android:hint="Enter Full Name" />
+
+
+    </LinearLayout>
+
+
+    <!-- Linear layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for Email label -->
+        <TextView
+            android:id="@+id/emailAddressUpdateLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Email Id" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for email with id: emailAddressUpdate -->
+        <EditText
+            android:id="@+id/emailAddressUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPersonName"
+            android:hint="Enter Email Address" />
+
+
+    </LinearLayout>
+
+    <!-- Linear layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for organisation Label -->
+        <TextView
+            android:id="@+id/organisationUpdateLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Organisation" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for Organisation with id: organisationUpdate -->
+        <EditText
+            android:id="@+id/organisationUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPersonName"
+            android:hint="Enter Organisation" />
+
+
+    </LinearLayout>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for phone number label -->
+        <TextView
+            android:id="@+id/phoneNumberUpdateLabel"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Phone Number" />
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for Phone Number with id: phoneNumberUpdate -->
+        <EditText
+            android:id="@+id/phoneNumberUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPersonName"
+            android:hint="Enter Phone Number" />
+
+
+    </LinearLayout>
+
+    <!-- Linear layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for user name label -->
+        <TextView
+            android:id="@+id/userNameUpdateLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="User Name" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for user name with id: userNameUpdate -->
+        <EditText
+            android:id="@+id/userNameUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPersonName"
+            android:hint="Enter UserName" />
+
+
+    </LinearLayout>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text view for password label -->
+        <TextView
+            android:id="@+id/passwordUpdateLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Password" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Edit Text for password with id: passwordUpdate -->
+        <EditText
+            android:id="@+id/passwordUpdate"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:inputType="textPassword"
+            android:hint="Enter Password" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"/>
+
+    <!-- Button to Update profile -->
+    <Button
+        android:id="@+id/updateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"
+        android:text="Update" />
+
+</LinearLayout>

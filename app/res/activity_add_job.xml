@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout For Add Job Activity -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    android:fillViewport="true"
+    tools:context=".AddJob">
+
+
+    <!-- Linear Layout with Vertical Orientation -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Text View  -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Job"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Edit Text for Job Name with id : jobName -->
+
+        <EditText
+            android:id="@+id/jobName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="textPersonName"
+            android:minHeight="60sp"
+            android:hint="Enter Job Name"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Job Location with id : jobLocation -->
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="textPersonName"
+            android:minHeight="60sp"
+            android:hint="Enter Location"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Zip Code with id : zipCode -->
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="textPersonName"
+            android:minHeight="60sp"
+            android:hint="Enter ZipCode"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Job Organisation with id : jobOrganisation -->
+        <EditText
+            android:id="@+id/jobOrganisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="textPersonName"
+            android:minHeight="60sp"
+            android:hint="Enter Organisation"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Job Description with id : jobDescription -->
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="60sp"
+            android:hint="Enter Description"
+            android:backgroundTint="@color/black"/>
+
+        
+        <!-- Spinner to select Job Type from dropdown list with id: jobTypeSpinner-->
+        <Spinner
+            android:id="@+id/jobTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60sp"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Salary with id : salary -->
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="number"
+            android:minHeight="60sp"
+            android:hint="Enter Salary"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Job Requirements with id : requirements -->
+        <EditText
+            android:id="@+id/requirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="60sp"
+            android:hint="Enter Requirements"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for Job Benefits with id : benefits -->
+        <EditText
+            android:id="@+id/benefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="60sp"
+            android:hint="Enter Benefits"
+            android:backgroundTint="@color/black"/>
+
+
+        <!-- Edit Text for No. of Positions available with id : positions -->
+        <EditText
+            android:id="@+id/positions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:paddingLeft="10sp"
+            android:inputType="number"
+            android:minHeight="60sp"
+            android:hint="Enter Positions"
+            android:backgroundTint="@color/black"/>
+        <!-- Space with height 20sp -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+        <!-- Button to Add Job with id: addJob -->
+        <Button
+            android:id="@+id/addJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Job"
+            android:layout_marginLeft="150sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

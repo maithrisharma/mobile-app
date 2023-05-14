@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card View for single item in Applications Recycler view -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15sp"
+    app:cardUseCompatPadding="true">
+
+    <!-- Linear Layout with vertical orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <!-- Text View for application Id -->
+        <TextView
+            android:id="@+id/applicationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <!-- Linear Layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Text View for job name label-->
+            <TextView
+                android:id="@+id/jobNameLabelApp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Job Name" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+            <!-- Text view for job name with id: jobNameApp -->
+            <TextView
+                android:id="@+id/jobNameApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+       
+
+        <!-- Linear Layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Text View for organisation label -->
+            <TextView
+                android:id="@+id/jobOrganisationLabelApp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Organisation" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+            <!-- Text view for job organisation with id: jobOrganisationApp -->
+            <TextView
+                android:id="@+id/jobOrganisationApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+       
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <!-- Text view for job location label -->
+            <TextView
+                android:id="@+id/jobLocationLabelApp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Location" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+        <!-- Text view for job location with id: jobLocationApp -->
+            <TextView
+                android:id="@+id/jobLocationApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+        <!-- Button for View Status -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Status"
+            android:id="@+id/viewStatus"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

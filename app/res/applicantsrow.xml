@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card View for single item in Applicants Recycler view -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15sp"
+    app:cardUseCompatPadding="true">
+
+    <!-- Linear layout with vertical orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Space with height 10sp -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <!-- Text view for Application Id-->
+        <TextView
+            android:id="@+id/aId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+
+
+        <!-- Linear layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Text view for Full Name Label-->
+            <TextView
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Full Name" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+            <!-- Text View for Full Name with id: fullNameApp -->
+            <TextView
+                android:id="@+id/fullNameApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+
+
+        <!-- Linear Layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Text view for Email Label -->
+            <TextView
+
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Email" />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+            <!-- Text View for Email with id: emailApp -->
+            <TextView
+                android:id="@+id/emailApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+
+
+        <!-- Linear Layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Text View for Phone No Label -->
+            <TextView
+
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingLeft="10sp"
+                android:text="Phone No." />
+
+            <Space
+                android:layout_width="30sp"
+                android:layout_height="match_parent" />
+
+            <!-- Text View for Phone Number with id: pNoApp -->
+            <TextView
+                android:id="@+id/pNoApp"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="TextView" />
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <!-- Linear Layout with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Button to accept-->
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/accept"
+            android:minHeight="50sp"
+            android:layout_marginLeft="70sp"/>
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="50sp" />
+
+            <!-- Button to reject -->
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:id="@+id/reject"
+                android:minHeight="50sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

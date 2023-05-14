@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for Profile Activity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cut_card_background"
+    tools:context=".Profile">
+    <!-- Space with height 50sp-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"/>
+
+    <!-- Icon for the profile -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120sp"
+        android:layout_height="100sp"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        android:layout_marginLeft="130sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"/>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Full Name" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for Full Name with id: fullNameProfile  -->
+        <TextView
+            android:id="@+id/fullNameProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <!-- Linear layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/emailAddressLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Email Id" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for Email Address with id: emailAddressProfile -->
+        <TextView
+            android:id="@+id/emailAddressProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/organisationLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Organisation" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for organisation with id: organisationProfile  -->
+        <TextView
+            android:id="@+id/organisationProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <!-- Linear Layout with horizontal Orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/phoneNumberLabel"
+            android:layout_width="110sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Phone Number" />
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for Phone Number with id: phoneNumberProfile  -->
+        <TextView
+            android:id="@+id/phoneNumberProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/userNameLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="User Name" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for User Name with id: userNameProfile  -->
+        <TextView
+            android:id="@+id/userNameProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+    <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/rankLabel"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:paddingLeft="10sp"
+            android:text="Rank" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for Rank with id: rankProfile  -->
+        <TextView
+            android:id="@+id/rankProfile"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:minHeight="50sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+    <!-- Button for edit Profile-->
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50sp"
+        android:text="Edit Profile" />
+
+</LinearLayout>

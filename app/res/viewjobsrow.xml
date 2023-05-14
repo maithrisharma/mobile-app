@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card View for single item in View Jobs Normal Recycler view -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15sp"
+    app:cardUseCompatPadding="true">
+
+    <!-- Linear Layout with Vertical Orientation-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Space with height 10sp -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <!-- Text View for job id -->
+        <TextView
+            android:id="@+id/jobIdNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Text View for job name label -->
+        <TextView
+            android:id="@+id/jobNameLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Job Name" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job name with id: jobNameNormal -->
+        <TextView
+            android:id="@+id/jobNameNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job location label -->
+        <TextView
+            android:id="@+id/jobLocationLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Location" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job location with id: jobLocationNormal -->
+        <TextView
+            android:id="@+id/jobLocationNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job zip code label -->
+        <TextView
+            android:id="@+id/jobZipCodeLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="ZipCode" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for zip code with id: jobZipCodeNormal -->
+        <TextView
+            android:id="@+id/jobZipCodeNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job organisation label -->
+        <TextView
+            android:id="@+id/jobOrganisationLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Organisation" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job organisation with id: jobOrganisationNormal -->
+        <TextView
+            android:id="@+id/jobOrganisationNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job description label -->
+        <TextView
+            android:id="@+id/jobDescriptionLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Description" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job description with id: jobDescriptionNormal -->
+
+        <TextView
+            android:id="@+id/jobDescriptionNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job Type label -->
+        <TextView
+            android:id="@+id/jobTypeLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Job Type" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job Type with id: jobTypeNormal -->
+        <TextView
+            android:id="@+id/jobTypeNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job salary label -->
+        <TextView
+            android:id="@+id/jobSalaryLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Salary" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job salary with id: jobSalaryNormal -->
+        <TextView
+            android:id="@+id/jobSalaryNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job requirements label -->
+        <TextView
+            android:id="@+id/jobRequirementsLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Requirements" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job requirements with id: jobRequirementsNormal -->
+        <TextView
+            android:id="@+id/jobRequirementsNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job Benefits label -->
+        <TextView
+            android:id="@+id/jobBenefitsLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Benefits" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job Benefits with id: jobBenefitsNormal -->
+        <TextView
+            android:id="@+id/jobBenefitsNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+        <!-- Linear Layout with horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Text View for job Positions label -->
+        <TextView
+            android:id="@+id/jobPositionsLabelNormal"
+            android:paddingLeft="10sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Positions" />
+
+        <Space
+            android:layout_width="30sp"
+            android:layout_height="match_parent" />
+
+        <!-- Text View for job positions with id: jobPositionsNormal -->
+        <TextView
+            android:id="@+id/jobPositionsNormal"
+            android:layout_width="260sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+        <!-- Text view for no of applicants with id: noOfApplicants -->
+        <TextView
+            android:id="@+id/noOfApplicants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone" />
+    
+
+        <!-- Button to apply -->
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="Apply Now" />
+        
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

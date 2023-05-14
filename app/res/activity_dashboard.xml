@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for Dashboard Activity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".Dashboard">
+
+    <!-- Text View for Dashboard -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_marginBottom="12sp"
+        android:text="Dashboard"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Grid layout with 2 rows and 2 columns -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20sp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <!-- Card View for View Jobs -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewJobsNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <!-- Linear Layout with vertical orientation -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- View Icon-->
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_baseline_visibility_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Jobs"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card View for View Applications -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewApplicationsNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <!-- Linear Layout with vertical orientation -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- View Applications Icon -->
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_baseline_preview_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Applications"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card View for Profile -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProfileNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <!-- Linear Layout with vertical orientation-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Icon for Profile -->
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_baseline_person_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card View for Logout -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogoutNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:cardCornerRadius="8sp"
+            app:cardElevation="8sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Icon for Logout -->
+                <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_baseline_exit_to_app_24" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textSize="26sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</RelativeLayout>
